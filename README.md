@@ -1,4 +1,8 @@
-# Azure AD / Entra ID — Identity Basics Lab
+<p align="center">
+  <img src="screenshots/identity_basics_banner.png" alt="Azure AD / Entra ID — MFA Enforcement Lab Banner" width="100%">
+</p>
+
+# 🔐 Azure AD / Entra ID — MFA Enforcement Lab
 
 **Objective:** Demonstrate identity creation, grouping, and role-based access control (RBAC) within Microsoft Entra ID (Azure AD). This lab establishes core IAM fundamentals used in enterprise identity management and access governance.
 

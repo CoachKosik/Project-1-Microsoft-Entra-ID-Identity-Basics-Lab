@@ -133,7 +133,7 @@ This is **Project 1** of a 4-project enterprise IAM series.
 
 ---
 
-## 📂 Repo Structure
+## ▶️ Next Project
 
 🔗 **Click here to continue the IAM lab series →**
 https://github.com/CoachKosik/azure-ad-mfa-enforcement

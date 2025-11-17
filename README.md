@@ -122,9 +122,6 @@ This is **Project 1** of a 4-project enterprise IAM series.
 ✔ **Contractor isolation** — required for SOC2, ISO27001, & PCI  
 ✔ **Least privilege documented** — auditors require justification
 
-> 📌 Recruiter Value:  
-> *This shows you understand real enterprise IAM governance — NOT just how to click buttons.*
-
 ---
 
 ## 🧠 What I Learned

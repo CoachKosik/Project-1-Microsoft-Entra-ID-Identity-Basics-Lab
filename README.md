@@ -1,177 +1,164 @@
 <p align="center">
-  <img src="screenshots/identity_basics_banner.png" alt="Azure AD / Entra ID — Identity Basics Lab Banner" width="100%">
+  <img src="screenshots/identity_basics_banner.png" width="100%">
 </p>
 
-# 🔐 Project 1 — Microsoft Entra ID Identity Administration Basics  
-**Core IAM Foundations — Users • Groups • RBAC • Least Privilege**
+<h1 align="center">🔐 Project 1 — Microsoft Entra ID Identity Basics Lab</h1>
+<h3 align="center">Identity Structure ▸ Role-Based Access ▸ Zero Trust Foundations</h3>
 
-![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-Identity_Management-blue?style=flat-square)
-![RBAC](https://img.shields.io/badge/RBAC-Least_Privilege-blue?style=flat-square)
-![Security](https://img.shields.io/badge/Access_Governance-Best_Practices-green?style=flat-square)
+---
+
+## 📌 Overview
+
+This project builds a strong IAM foundation inside Microsoft Entra ID (Azure AD) by:
+
+✔ Structuring identities into **security-scoped groups**  
+✔ Assigning **role-based permissions using PIM-ready least privilege**  
+✔ Separating **employees, support staff, and external contractors**  
+✔ Creating a **real-world baseline** that future IAM controls depend on
+
+This is **Project 1** of a 4-project enterprise IAM series.
 
 ---
 
 ## 📚 Table of Contents
-- [Objective](#objective)
-- [Identity Architecture](#identity-architecture)
-- [Users Created](#users-created)
-- [Groups & Memberships](#groups--memberships)
-- [RBAC Role Assignments](#rbac-role-assignments)
-- [Least Privilege Justification](#least-privilege-justification)
-- [Screenshots](#screenshots)
-- [What I Learned](#what-i-learned)
-- [Next Project](#next-project)
-- [Repo Structure](#repo-structure)
 
----
-<details>
-  <summary><h2 id="objective">🎯 Objective</h2></summary>
-This lab establishes **foundational identity administration skills** inside Microsoft Entra ID (Azure AD):
-
-✔ Created & managed identities  
-✔ Implemented role-based access control (RBAC)  
-✔ Built security groups with least-privilege design  
-✔ Assigned scoped directory roles—_not_ global roles  
-
-This project mirrors real enterprise identity governance practices required for modern IAM analyst/admin roles.
-
-</details
+- [Objectives](#-objectives)
+- [Identity Architecture](#-identity-architecture)
+- [Users](#-users)
+- [Groups](#-groups)
+- [Role Assignments](#-role-assignments)
+- [Security Rationale](#-security-rationale)
+- [What I Learned](#-what-i-learned)
+- [Next Project](#-next-project)
+- [Repo Structure](#-repo-structure)
 
 ---
 
-<details>
-  <summary><h2 id="identity-architecture--naming">🏗️ Identity Architecture & Naming</h2></summary>
+## 🎯 Objectives
 
-| Component | Naming Standard | Purpose |
-|----------|----------------|---------|
-| Users | First + Last | Human identities only |
-| Groups | `GG-*` | Role-based permissions |
-| Roles | Scoped admin | No global admins |
-| Admin Separation | YES | Enforced Segregation of Duties |
-
-</detais>
-
----
-
-## 👤 Users Created
-
-| User | Purpose |
+| Goal | Outcome |
 |------|---------|
-| Maverick Blaze | User admin duties |
-| Nathan Dash | Password reset duties |
-| Leah Vanta | Contractor — restricted |
-| Dawsyn Echo | Contractor — restricted |
-| Eddie Spark | Contractor — restricted |
+| Build IAM baseline | Users + Groups + Role assignments |
+| Enforce least privilege | No standing global admin |
+| Prepare for Zero Trust | Segmentation & RBAC separation |
+| Enable audit visibility | Screenshots + documentation |
 
 ---
 
-## 👥 Groups & Memberships
+## 🏗 Identity Architecture
 
-| Group | Members | Purpose |
-|-------|---------|---------|
-| GG-Support-Agents | Maverick, Nathan | Internal Helpdesk |
-| GG-Contractors | Leah, Dawsyn, Eddie | Restricted access |
+```text
+├── Employees
+│ ├── IT Support
+│ └── Standard Users
+└── Contractors
+```
 
----
 
-## 🔐 RBAC Role Assignments
-
-| User | Role | Reason |
-|------|------|--------|
-| Maverick Blaze | User Administrator | Needs to manage accounts |
-| Nathan Dash | Password Administrator | Reset only |
-| Contractors | None | No privileged access |
+➡ Contractors **must NEVER** inherit employee entitlements  
+➡ All privileged access is **assigned via group**, not directly
 
 ---
 
-## 🛡 Least Privilege Justification
+## 👤 Users
+<details open>
+<summary><strong>👤 Users List</strong></summary>
 
-✔ **Segregation of Duties**  
-No single user can create AND reset accounts  
+| User | Type | Role |
+|------|------|------|
+| Sierra Nova | Employee | IT Support |
+| Nathan Dash | Employee | Standard |
+| Eddie Spark | Contractor | Vendor |
 
-✔ **Contractor No-Privilege Design**  
-Controls insider risk surface  
+**Screenshot:**  
+![Users List](screenshots/users-list.png)
 
-✔ **Scoped admin roles only**  
-➡ Matches CIS, ISO, and Microsoft Zero Trust guidance  
-
-> _If a user doesn’t need it, they don’t get it._
-
----
-
-## 📸 Screenshots
-
-<details>
-<summary><strong>👤 Users</strong></summary>
-
-screenshots/
-├─ users-list.png
-</details> <details> <summary><strong>👥 Groups</strong></summary>
-txt
-Copy code
-screenshots/
-├─ groups-list.png
-├─ support-agents-members.png
-├─ contractors-members.png
-</details> <details> <summary><strong>🛡 Role Assignments</strong></summary>
-txt
-Copy code
-screenshots/
-├─ mav-user-admin.png
-├─ nate-password-admin.png
 </details>
-🧠 What I Learned
-Entra ID identity structure & governance model
 
-RBAC design and security justification
+---
 
-How to document IAM decisions for auditors
+## 👥 Groups
+<details>
+<summary><strong>👥 Groups</strong></summary>
 
-Why contractors must be isolated and scoped
+**Baseline Groups**
 
-▶️ Next Project
-Project 2 — Enforce MFA for All Users
-🔗 https://github.com/CoachKosik/azure-ad-mfa-enforcement
+| Group | Purpose |
+|-------|---------|
+| GG-AllUsers | All internal employees |
+| GG-IT-Support | Privileged helpers |
+| GG-Contractors | Segmented external users |
 
-📂 Repo Structure
-txt
-Copy code
-Azure-AD-Entra-ID-Identity-Basics-Lab/
-│ README.md
-└── screenshots/
-    ├─ identity_basics_banner.png
-    ├─ users-list.png
-    ├─ groups-list.png
-    ├─ support-agents-members.png
-    ├─ contractors-members.png
-    ├─ mav-user-admin.png
-    ├─ nate-password-admin.png
+**Screenshots:**  
+![Group List](screenshots/groups-list.png)  
+![Support Agents Membership](screenshots/support-agents-members.png)  
+![Contractors Membership](screenshots/contractors-members.png)
+
+</details>
+
+---
+
+## 🛡 Role Assignments
+<details>
+<summary><strong>🛡 Role Delegation</strong></summary>
+
+| Role | Assigned To | Reason |
+|------|-------------|--------|
+| Helpdesk Admin | GG-IT-Support | Reset passwords only |
+| Password Admin | Nathan Dash | Non-admin user with scoped rights |
+
+**Screenshots:**  
+![Sierra Support Admin](screenshots/mav-user-admin.png)  
+![Nathan Password Admin](screenshots/nate-password-admin.png)
+
+</details>
+
+---
+
+## 🧠 Security Rationale
+
+✔ **No standing Global Admin** — reduces breach blast radius  
+✔ **Privileged groups only** — enables PIM activation later  
+✔ **Contractor isolation** — required for SOC2, ISO27001, & PCI  
+✔ **Least privilege documented** — auditors require justification
+
+> 📌 Recruiter Value:  
+> *This shows you understand real enterprise IAM governance — NOT just how to click buttons.*
 
 ---
 
 ## 🧠 What I Learned
-- Entra ID identity structure & governance model  
-- RBAC design and security justification  
-- How to document IAM decisions for auditors  
-- Why contractors must be isolated and scoped  
+
+🔹 How enterprise identity structure affects Zero Trust  
+🔹 Why permissions must live in **groups, not users**  
+🔹 How to document IAM decisions for auditors & hiring managers  
+🔹 Why contractors require **separate identity boundaries**  
 
 ---
 
 ## ▶️ Next Project
+
 **Project 2 — Enforce MFA for All Users**  
 🔗 https://github.com/CoachKosik/azure-ad-mfa-enforcement
 
 ---
 
 ## 📂 Repo Structure
-```txt
+
+```text
 Azure-AD-Entra-ID-Identity-Basics-Lab/
 │ README.md
 └── screenshots/
-    ├─ identity_basics_banner.png
-    ├─ users-list.png
-    ├─ groups-list.png
-    ├─ support-agents-members.png
-    ├─ contractors-members.png
-    ├─ mav-user-admin.png
-    ├─ nate-password-admin.png
+├─ identity_basics_banner.png
+├─ users-list.png
+├─ groups-list.png
+├─ support-agents-members.png
+├─ contractors-members.png
+├─ mav-user-admin.png
+├─ nate-password-admin.png
+```
+
+---
+
+⭐ **If this project was useful, consider starring the repo!**  
+🧑‍💻 Follow the full IAM series at: https://github.com/CoachKosik

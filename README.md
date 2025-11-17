@@ -24,9 +24,8 @@
 - [Repo Structure](#repo-structure)
 
 ---
-<details open>
-  <summary><h2 id="objective">
-## 🎯 Objective</h2></summary>
+<details>
+  <summary><h2 id="objective">🎯 Objective</h2></summary>
 This lab establishes **foundational identity administration skills** inside Microsoft Entra ID (Azure AD):
 
 ✔ Created & managed identities  
@@ -36,9 +35,12 @@ This lab establishes **foundational identity administration skills** inside Micr
 
 This project mirrors real enterprise identity governance practices required for modern IAM analyst/admin roles.
 
+</details
+
 ---
 
-## 🏗 Identity Architecture
+<details>
+  <summary><h2 id="identity-architecture--naming">🏗️ Identity Architecture & Naming</h2></summary>
 
 | Component | Naming Standard | Purpose |
 |----------|----------------|---------|
@@ -46,6 +48,8 @@ This project mirrors real enterprise identity governance practices required for 
 | Groups | `GG-*` | Role-based permissions |
 | Roles | Scoped admin | No global admins |
 | Admin Separation | YES | Enforced Segregation of Duties |
+
+</detais>
 
 ---
 

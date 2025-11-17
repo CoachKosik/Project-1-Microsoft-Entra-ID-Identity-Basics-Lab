@@ -60,7 +60,7 @@ This is **Project 1** of a 4-project enterprise IAM series.
 ---
 
 ## 👤 Users
-<details open>
+<details>
 <summary><strong>👤 Users List</strong></summary>
 
 | User | Type | Role |

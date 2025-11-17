@@ -28,7 +28,7 @@ This is **Project 1** of a 4-project enterprise IAM series.
 - [Groups](#-groups)
 - [Role Assignments](#-role-assignments)
 - [Security Rationale](#-security-rationale)
-- [Next Project → MFA Enforcement](#-next-project)
+- [Next Project → MFA Enforcement](#next-project)
 - [Repo Structure](#-repo-structure)
 
 ---
@@ -134,9 +134,8 @@ This is **Project 1** of a 4-project enterprise IAM series.
 
 ## ▶️ Next Project
 
-🔗 **Click here to continue the IAM lab series →**
-https://github.com/CoachKosik/azure-ad-mfa-enforcement
-
+**Project 2 — Enforce MFA for All Users**  
+🔗 https://github.com/CoachKosik/azure-ad-mfa-enforcement
 
 ---
 

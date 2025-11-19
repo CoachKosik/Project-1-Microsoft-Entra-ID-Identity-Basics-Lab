@@ -14,16 +14,24 @@
 
 ---
 
-## 📌 Overview
+## 🔵 Why This Project Matters to IAM Hiring Managers
 
-This project builds a strong IAM foundation inside Microsoft Entra ID (Azure AD) by:
+This project establishes the **foundational skills required for any IAM role**, demonstrating that I can structure identities correctly in Microsoft Entra ID — not just create objects.
 
-✔ Structuring identities into **security-scoped groups**  
-✔ Assigning **role-based permissions using PIM-ready least privilege**  
-✔ Separating **employees, support staff, and external contractors**  
-✔ Creating a **real-world baseline** that future IAM controls depend on
+What this proves I can do:
 
-This is **Project 1** of a 4-project enterprise IAM series.
+- **Build a clean identity foundation** using Users, Security Groups, and Directory Roles  
+- **Apply least privilege** through group-based role assignment instead of direct user permissions  
+- **Separate contractors vs employees**, a requirement for SOC2, ISO 27001, PCI-DSS, and most enterprise IAM teams  
+- **Document identity decisions** at an audit-ready level using screenshots and access justification  
+- **Create a scalable RBAC model**, preparing the environment for Conditional Access, MFA, and lifecycle automation
+
+This aligns with the expectations for:
+
+- IAM Analysts  
+- Identity Governance Specialists  
+- Entra ID / Azure AD Engineers  
+- Security Operations IAM Support roles
 
 ---
 

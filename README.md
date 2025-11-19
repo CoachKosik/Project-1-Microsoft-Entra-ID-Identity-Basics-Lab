@@ -7,6 +7,13 @@
 
 ---
 
+### Users · Groups · Roles · RBAC Foundations
+
+> **TL;DR:** Built a clean identity baseline in Microsoft Entra ID using users, security groups, and role-based access control.  
+> Focus: least privilege, directory object governance, audit-ready documentation.
+
+---
+
 ## 📌 Overview
 
 This project builds a strong IAM foundation inside Microsoft Entra ID (Azure AD) by:
@@ -153,6 +160,16 @@ Entra-ID-Identity-Basics-Lab/
 ├─ mav-user-admin.png
 ├─ nate-password-admin.png
 ```
+
+---
+
+## 🧩 Skills Demonstrated
+- Microsoft Entra ID (Azure AD) administration
+- User lifecycle basics (creation, attributes, governance)
+- Security groups & least-privilege RBAC
+- Directory roles & scoped access assignments
+- Identity architecture: employees vs contractors
+- Audit documentation (screenshots, access justification)
 
 ---
 

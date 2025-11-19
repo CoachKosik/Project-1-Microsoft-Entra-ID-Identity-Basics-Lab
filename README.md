@@ -142,7 +142,7 @@ This is **Project 1** of a 4-project enterprise IAM series.
 ## 📂 Repo Structure
 
 ```text
-Azure-AD-Entra-ID-Identity-Basics-Lab/
+Entra-ID-Identity-Basics-Lab/
 │ README.md
 └── screenshots/
 ├─ identity_basics_banner.png

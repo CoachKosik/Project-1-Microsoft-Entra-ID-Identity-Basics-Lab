@@ -7,10 +7,10 @@
 
 ---
 
-### Users · Groups · Roles · RBAC Foundations
+#### Users · Groups · Roles · RBAC Foundations
 
 > **TL;DR:** Built a clean identity baseline in Microsoft Entra ID using users, security groups, and role-based access control.  
-> Focus: least privilege, directory object governance, audit-ready documentation.
+> **Focus:** least privilege, directory object governance, audit-ready documentation.
 
 ---
 

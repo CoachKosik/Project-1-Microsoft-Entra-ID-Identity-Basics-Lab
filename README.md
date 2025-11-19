@@ -172,12 +172,13 @@ Entra-ID-Identity-Basics-Lab/
 ---
 
 ## 🧩 Skills Demonstrated
-- Microsoft Entra ID (Azure AD) administration
-- User lifecycle basics (creation, attributes, governance)
-- Security groups & least-privilege RBAC
-- Directory roles & scoped access assignments
-- Identity architecture: employees vs contractors
-- Audit documentation (screenshots, access justification)
+- Microsoft Entra ID (Azure AD) identity administration
+- User object creation, attribute management & directory hygiene
+- Security group design for scalable access control
+- Least-privilege RBAC using group-based role assignments
+- Contractor vs employee identity separation for compliance (SOC2, ISO 27001)
+- Directory role justification & access documentation
+- Foundational Zero Trust identity structure
 
 ---
 

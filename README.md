@@ -156,5 +156,6 @@ Entra-ID-Identity-Basics-Lab/
 
 ---
 
-⭐ **If this project was useful, consider starring the repo!**  
-🧑‍💻 Follow the full IAM series at: https://github.com/CoachKosik
+⭐ **If this project helped you, please STAR the repo**
+🧑‍💻 Full IAM Portfolio → https://github.com/CoachKosik  
+🧠 *Proof-based IAM > text-only IAM*
